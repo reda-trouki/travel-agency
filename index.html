@@ -45,30 +45,31 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-32 pb-20 px-4 relative" x-data="{ parallax: 0 }" @scroll.window="parallax = window.pageYOffset / 3">
-        <div class="absolute inset-0 bg-cover bg-center" :style="`background-image: url('/api/placeholder/1200/800'); transform: translateY(${parallax}px);`"></div>
-        <div class="container mx-auto text-center relative z-10">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6" data-aos="fade-up">
-                Transform Your Journey,<br>Transform Your Life
-            </h1>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Discover mindful travel experiences that combine wellness, personal growth, and breathtaking destinations.
-            </p>
-            <button class="bg-teal-600 text-white px-8 py-3 rounded-full text-lg hover:bg-teal-700 transition" data-aos="fade-up" data-aos-delay="200">
-                Explore Retreats
-            </button>
-        </div>
-    </header>
+<header class="pt-32 pb-20 px-4 relative" x-data="{ parallax: 0 }" @scroll.window="parallax = window.pageYOffset / 3">
+    <div class="absolute inset-0 bg-cover bg-center" :style="`background-image: url('images/yoga_nature.png'); transform: translateY(${parallax}px);`"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto text-center relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+            Transform Your Journey,<br>Transform Your Life
+        </h1>
+        <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            Discover mindful travel experiences that combine wellness, personal growth, and breathtaking destinations.
+        </p>
+        <button class="bg-teal-600 text-white px-8 py-3 rounded-full text-lg hover:bg-teal-700 transition" data-aos="fade-up" data-aos-delay="200">
+            Explore Retreats
+        </button>
+    </div>
+</header>
 
     <!-- Featured Retreats Carousel -->
     <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Featured Wellness Retreats</h2>
         <div class="relative" x-data="{ activeSlide: 0, slides: [
-            { image: 'images/Yoga_Yogabarn.png', title: 'Bali Yoga Retreat', description: '7 days of transformative yoga and meditation in the heart of Ubud.', price: '$1,899' },
-            { image: 'images/6-Day-Tailored-Luxury-Yoga-Mindfulness-Retreat.png', title: 'Costa Rica Mindfulness', description: '10 days of mindfulness and surfing in pristine nature.', price: '$2,299' },
-            { image: 'images/Dolder-Grand-winter_bu.png', title: 'Swiss Alps Wellness', description: '5 days of holistic wellness and mountain meditation.', price: '$2,499' },
-            { image: 'images/Chiva-Som_Pool_Beach_View-1024x683.png', title: 'Thailand Beach Retreat', description: '7 days of yoga and relaxation on the beautiful beaches of Thailand.', price: '$1,999' },
+            { image: 'images/Yoga_Yogabarn.png', title: 'Bali Yoga Retreat', description: '7 days of transformative yoga and meditation in the heart of Ubud.', price: 'MAD1,899' },
+            { image: 'images/6-Day-Tailored-Luxury-Yoga-Mindfulness-Retreat.png', title: 'Costa Rica Mindfulness', description: '10 days of mindfulness and surfing in pristine nature.', price: 'MAD2,299' },
+            { image: 'images/Dolder-Grand-winter_bu.png', title: 'Swiss Alps Wellness', description: '5 days of holistic wellness and mountain meditation.', price: 'MAD2,499' },
+            { image: 'images/Chiva-Som_Pool_Beach_View-1024x683.png', title: 'Thailand Beach Retreat', description: '7 days of yoga and relaxation on the beautiful beaches of Thailand.', price: 'MAD1,999' },
 
             ] }">
             <div class="overflow-hidden">
